@@ -25,8 +25,9 @@ a {
 
 /* compnents */
 .garisVertikal{
-    border-left: 2px solid black;
+    border-left: 3px solid black;
     height: 5px;
+    padding-left: 50px;
 }
 /* end of components */
 
@@ -78,35 +79,42 @@ div.kotak3 div.container {
 #login2{
     align-items: left;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
     position: relative;
     left: 150px;
-    top: -140px;
+    top: -160px;
+    bottom: 0;
 }
 .kotak2 {
     color: white;
-    display: grid;
-    justify-items: center;
-    width: 35%;
+    display: flex;
+    width: 37%;
     padding: 5px 0 5px 0;
     margin: 20px 0 0px 60px;
     border-radius: 10px;
+}
+.img{
+    width: 15px; 
+    height: 20px; 
+    float: left;
+    padding-left: 35px;
+    padding-right: 15px;
+}
+.img1{
+    width: 20px; 
+    height: 20px; 
+    float: left;
+    padding-left: 35px;
+    padding-right: 10px;
+}
+.img2{
+    width: 20px; 
+    height: 20px; 
+    float: left;
+    padding-left: 35px;
+    padding-right: 10px;
+}
 
-}
-.kotak21 {
-    color: white;
-    display: grid;
-    justify-items: center;
-    width: 35%;
-    padding: 5px 0 5px 0;
-    margin: 20px 0 0px 60px;
-    border-radius: 10px;
-    position: relative;
-    margin-top: 115px;
-}
 #or{
-    /* background-color: rgb(24, 24, 230); */
     width: 52%;
     text-align: right;
     position: relative;

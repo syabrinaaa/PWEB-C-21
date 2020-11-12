@@ -16,6 +16,9 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    max-width: 1600px;
+    max-height: 100%;
+    margin: auto;
 }
 
 .container {
@@ -97,6 +100,21 @@ nav.navbar .navigation a:hover {
 .paragraf3{
     margin-top: 50px;
     text-align: center;
+    nav-index: 99;
+}
+#segitiga{
+    border-top: 360px solid #F79F77; 
+    border-left: 260px solid transparent;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+.segitiga1{
+    border-bottom: 360px solid #F79F77; 
+    border-right: 260px solid transparent;
+    float: right;
+    position: absolute;
+    left: 0;
 }
 #gambar1{
     margin:5% 0 0 20%;
@@ -107,6 +125,7 @@ nav.navbar .navigation a:hover {
 #gambar2{
     height: 300px;
     border-radius: 25px;
+    /* z-index: 1; */
 }
 #seklebat{
     color: #F79F77;
@@ -140,32 +159,40 @@ nav.navbar .navigation a:hover {
     width: 100%;
 }
 #par{
-    padding: 10% 0 10% 0 ;
+    display: flex;
+    margin: 4% 0 0 0 ;
 }
 #par1{
     font-family: 'Carter One', cursive;
-    font-size: 28px;
+    font-size: 32px;
     text-shadow:1px 2px 8px rgba(56, 56, 56, 0.65);
 }
-.paragraf5{
-    width: 150%;
-    display: flex;
-    justify-content: space-around;
-    margin: 10px 0 50px -16px;
-    color: black;
+#par2{
+    font-family: 'Carter One', cursive;
+    font-size: 32px;
+    margin: 70px 0 0 50px;
+    text-shadow:1px 2px 8px rgba(56, 56, 56, 0.65);
 }
 #gambar4{
     height: 50px;
     float: left;
+    padding: 35px 30px 0 20%;
+    margin-top: -60px;
 }
 #space{
-    width: 120%;
-    background-color: coral;
+    width: 200%;
     text-align: left;
-    padding-left: 10%;
-    padding-right: 20%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: #80BEF5;
+    margin-top: -60px;
 }
 .color{
+
+    color: black;
+    padding: 0px 0px 0 20px;
+}
+.color1{
     color: black;
 }
 #contener{

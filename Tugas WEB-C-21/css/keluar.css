@@ -26,16 +26,16 @@ a {
 
 /* compnents */
 .garisVertikal{
-    border-left: 2px solid black;
+    border-left: 3px solid black;
     height: 5px;
-    padding left: 50px;
+    padding-left: 50px;
 }
 /* end of components */
 
 
 /* navbar */
 nav.navbar {
-    background-color: #ffffff;
+    background-color: white,;
 }
 nav.navbar > div.container {
     padding: 30px 0;

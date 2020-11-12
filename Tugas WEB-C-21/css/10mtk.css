@@ -10,14 +10,13 @@ a {
 }
 
 .body {
-    background-image: url('../img/calculator2.png');
+    background-image: url('../img/mtk.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 50% 90%;
-    background-position: center;
-    background-position-y: 110px;
-    background-color: #c4c4c4;
-    
+    background-size: 100% 100%;
+    max-width: 1600px;
+    max-height: 100%;
+    margin: auto;
 }
 
 .container {
@@ -28,9 +27,9 @@ a {
 
 /* compnents */
 .garisVertikal{
-    padding-left: 20px;
-    border-left: 2px solid black;
+    border-left: 3px solid black;
     height: 5px;
+    padding-left: 50px;
 }
 .kecil{
     margin-right: 150px;
@@ -66,12 +65,12 @@ nav.navbar .navigation a:hover {
     margin-top: auto;
     margin-bottom: auto;
     max-height: 70%;
-    width: 100%;
+    width: 95%;
     height: 535px;
 }
 #nama{
-    padding: 30px 20px 10px 5%;
-    width: 93.5%;
+    padding: 30px 20px 10px 10%;
+    width: 79%;
     display: flex;
     font-weight: 600;
 }
@@ -87,12 +86,13 @@ nav.navbar .navigation a:hover {
     color: black;
     font-size: 18px;
     font-weight: 500;
+    margin-left: 10%;
 }
 .paragraf2{
     display: grid;
 }
 .paragraf3{
-    width: 90%;
+    width: 78%;
     padding: 10px 0 10px 20px;
     border:solid 2px black;
     background-color: rgba(255, 255, 255, 0.692);
