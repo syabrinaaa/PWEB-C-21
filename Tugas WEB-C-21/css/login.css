@@ -15,7 +15,6 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    background-position: center;
 }
 
 .container {
@@ -85,15 +84,6 @@ div.kotak div.container {
     border-radius: 10px;
 
 }
-.kotak21 {
-    color: white;
-    display: flex;
-    width: 37%;
-    padding: 5px 0 5px 0;
-    margin: 20px 0 0px 60px;
-    border-radius: 10px;
-    margin-top: 115px;
-}
 .img{
     width: 15px; 
     height: 20px; 
@@ -116,7 +106,6 @@ div.kotak div.container {
     padding-right: 10px;
 }
 #or{
-    /* background-color: rgb(24, 24, 230); */
     width: 52%;
     text-align: right;
     position: relative;
@@ -151,14 +140,101 @@ tr {
     color: white;
     font-family: arial;
     margin: 0 auto;
-    width: 30%;
-    height: 25px;
+    width: 152%;
+    height: 30px;
     box-shadow: 1px 2px 8px rgba(56, 56, 56, 0.65);;
 }
-#kotakmasuk{
+.kotakmasuk{
     border-radius: 5px;
     width: 150%;
     height: 20px;
+    border-color: #C4C4C4;
+}
+.warnawin1{
+    background-color: #3B589C;
+}
+.warnawin2{
+    background-color: #1DA1F2;
+}
+.warnawin3{
+    background-color: #D32E2A;
+}
+.kotak3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    display: none;
+    top: 0;
+    align-items: center;
+}
+.window {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 34%;
+    width: 30%;
+    height: 60%;
+    padding: 16px;
+    border: 3px solid #DDDDDD;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0.1px #242424;
+}
+.judul{
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+.popup:target {
+    visibility: visible;
+}
+.gambar{
+    width: 35px; 
+    height: 55px; 
+    float: left;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+.gambar1{
+    width: 55px; 
+    height: 55px; 
+    float: left;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+.masfb{
+    margin-top: 55%;
+    margin-left: 23%;
+}
+.masuk1 {
+    background: #C4C4C4;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-family: arial;
+    margin-left: 18%;
+    width: 333px;
+    height: 45px;
+    box-shadow: 1px 2px 8px rgba(56, 56, 56, 0.65);
+}
+.masuk2 {
+    background: #6F6966;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-family: arial;
+    margin-left: 18%;
+    width: 333px;
+    height: 45px;
+    box-shadow: 1px 2px 8px rgba(56, 56, 56, 0.65);
+}
+.kotakmasuk1{
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 180%;
+    height: 45px;
     border-color: #C4C4C4;
 }
 #contener{
