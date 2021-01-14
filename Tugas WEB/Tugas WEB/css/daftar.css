@@ -78,10 +78,13 @@ div.kotak div.container {
 }
 .login3{
     align-items: left;
-    display: flex;
     padding-left: 10px;
     left: 160px;
     bottom: 0;
+}
+.checkbox{
+    font-size: 10px;
+    margin-top: -10px;
 }
 .kotak2 {
     color: white;
@@ -170,15 +173,17 @@ tr {
 .kotak3 {
     width: 100%;
     height: 100%;
-    position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     display: none;
     top: 0;
     align-items: center;
 }
+
+.kotak3.show {
+    display: block;
+}
 .window {
-    display: none;
     position: fixed;
     top: 10%;
     left: 34%;
@@ -195,7 +200,7 @@ tr {
     color: white;
     text-align: center;
 }
-.popup:target {
+#popup:target {
     visibility: visible;
 }
 .gambar{
