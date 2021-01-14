@@ -6,7 +6,7 @@
     <title>Sainz Indonesia</title>
     <link rel="stylesheet" href="css/daftar.css">
 </head>
-<body>
+<body class="body">
 
     <!-- navbar -->
     <nav>
@@ -32,53 +32,40 @@
     <div class="kotak">
         <div class="container">
             <div id="tekslog1"><strong>Masuk ke Sainz</strong></div>    
-                <a onclick="getInfo()" class="kotak2 warnawin1" style="margin-top: 200px;" href="#"><img class="img" src="../Tugas WEB/img/facebook.png" alt=""> Masuk dengan Facebook</a>       
-                <a onclick="getInfo1()" class="kotak2 warnawin2" href="#"><img class="img1" src="../Tugas WEB/img/twitter.png" alt="">Masuk dengan Twitter</a>       
-                <a onclick="getInfo2()" class="kotak2 warnawin3" href="#"><img class="img2" src="../Tugas WEB/img/google.png" alt="">Masuk dengan Google</a>
+                <a onclick="document.getElementById('popup').style.display='block';document.getElementById('bg_gelap').style.display='block'" href="javascript:void(0)" class="kotak2" style="background-color: #3B589C; margin-top: 200px;"><img class="img" src="../Tugas WEB/img/facebook.png" alt=""> Masuk dengan Facebook</a>       
+                <a onclick="document.getElementById('popup1').style.display='block';document.getElementById('bg_gelap1').style.display='block'" href="javascript:void(1)" class="kotak2" style="background-color: #1DA1F2;"><img class="img1" src="../Tugas WEB/img/twitter.png" alt="">Masuk dengan Twitter</a>       
+                <a onclick="document.getElementById('popup2').style.display='block';document.getElementById('bg_gelap2').style.display='block'" href="javascript:void(2)" class="kotak2" style="background-color: #D32E2A;"><img class="img2" src="../Tugas WEB/img/google.png" alt="">Masuk dengan Google</a>
 
             <div class="login2">
                 <div id="or">atau</div>
-                <form name="tempatDaftar" action="Login.html" method="GET">
+                <form action="Login.html" method="GET">
                     <table>
                         <tr style="margin-top:-165px ; " class="login3">
-                            <td><label for="nama">Nama</label></td>
-                            <td><input name="nama" class="kotakmasuk" type="text" placeholder="Masukkan Nama"></td>
+                            <td><label for="email">Nama</label></td>
+                            <td><input class="kotakmasuk" type="text" placeholder="Masukkan Nama"></td>
                         </tr>
                         <tr class="login3">
-                            <td><label class="kotakmasuk" for="Kelas">Kelas</label></td>
-                            <td><select name="Kelas">
-                                <option> Pilih Kelas
-                                    <option> Kelas 10
-                                        <option> Kelas 11
-                                            <option> Kelas 12
-                                            </option>
-                                        </option>
-                                    </option>
-                                </option>
-                            </select></td>
+                            <td><label for="password">Kelas</label></td>
+                            <td><input class="kotakmasuk" type="text" placeholder="Masukkan Kelas"></td>
                         </tr>
                         <tr class="login3">
                             <td><label for="email">E-mail</label></td>
-                            <td><input name="email" class="kotakmasuk" type="email" placeholder="Masukkan Email"></td>
+                            <td><input class="kotakmasuk" type="email" placeholder="Masukkan Email"></td>
                         </tr>
                         <tr class="login3">
-                            <td><label for="username">Username</label></td>
-                            <td><input name="username" class="kotakmasuk" type="text" placeholder="Masukkan Username"></td>
+                            <td><label for="password">Username</label></td>
+                            <td><input class="kotakmasuk" type="text" placeholder="Masukkan Username"></td>
                         </tr>
                         <tr class="login3">
-                            <td><label for="password">Password</label></td>
-                            <td><input name="password" class="kotakmasuk" id="password" type="password" placeholder="Masukkan Masukkan Password"></td>
-                            <td><div class="checkbox">
-                                <input type="checkbox" onclick="showPass()">Show Password</td>
+                            <td><label for="email">Kata Sandi</label></td>
+                            <td><input class="kotakmasuk" type="password" placeholder="Masukkan Kata Sandi"></td>
                         </tr>
                         <tr class="login3">
-                            <td><label for="password">Confirm Password</label></td> 
-                            <td><input name="confirm" class="kotakmasuk" id="password" type="password" placeholder="Confirm Password"></td>
-                            <td><div class="checkbox">
-                                <input  type="checkbox" onclick="showPass()">Show Password</td>
+                            <td><label for="password">Konfirmasi Kata Sandi</label></td> 
+                            <td><input class="kotakmasuk" type="password" placeholder="Masukkan Kata Sandi"></td>
                         </tr>
                         <tr class="login3">
-                            <td><input onclick="getDaftar()" id="masuk" type="submit" name="Daftar" value="Daftar"></td>
+                            <td><a href=""><input id="masuk" type="submit" name="Daftar" value="Daftar"></td>
                         </tr>
                     </table>
                 </form>
@@ -88,7 +75,7 @@
 
      <!-- Masuk Facebook -->
      <div id="bg_gelap" class="kotak3">
-        <div class="window warnawin1">
+        <div id="popup" class="window warnawin1">
             <div class="container">
                 <br>
                 <div class="judul"><img class="gambar" src="../Tugas WEB/img/facebook.png" alt="">Masuk Facebook</div>
@@ -106,7 +93,7 @@
                         <td><a href="Beranda(1).html"><input class="masuk1" type="submit" name="Masuk" value="Masuk"></a></td>
                     </tr>
                     <tr>
-                        <td><button onclick="batal()" class="masuk2 buttonn" type="batal">Batal</button</td>
+                        <td><a onclick="document.getElementById('popup1').style.display='none';document.getElementById('bg_gelap').style.display='none'" href="javascript:void(0)"><input class="masuk2" type="submit" name="Batal" value="Batal"></a></td>
                     </tr>
                 </table>
             </div>           
@@ -115,7 +102,7 @@
 
     <!-- Masuk Twitter -->
     <div id="bg_gelap1" class="kotak3">
-        <div class="window warnawin2">
+        <div id="popup1" class="window warnawin2">
             <div class="container">
                 <br>
                 <div class="judul"><img class="gambar1" src="../Tugas WEB/img/twitter.png" alt="">Masuk Twitter</div>
@@ -133,7 +120,7 @@
                         <td><a href="Beranda(1).html"><input class="masuk1" type="submit" name="Masuk" value="Masuk"></a></td>
                     </tr>
                     <tr>
-                        <td><button onclick="batal()" class="masuk2 buttonn" type="batal">Batal</button</td>
+                        <td><a onclick="document.getElementById('popup1').style.display='none';document.getElementById('bg_gelap1').style.display='none'" href="javascript:void(1)" ><input class="masuk2" type="submit" name="Batal" value="Batal"></a></td>
                     </tr>
                 </table>
             </div>           
@@ -160,7 +147,7 @@
                         <td><a href="Beranda(1).html"><input class="masuk1" type="submit" name="Masuk" value="Masuk"></a></td>
                     </tr>
                     <tr>
-                        <td><button onclick="batal()" class="masuk2 buttonn" type="batal">Batal</button</td>
+                        <td><a onclick="document.getElementById('popup2').style.display='none';document.getElementById('bg_gelap2').style.display='none'" href="javascript:void(2)"><input class="masuk2" type="submit" name="Batal" value="Batal"></a></td>
                     </tr>
                 </table>
             </div>           
@@ -170,7 +157,5 @@
     <div id="contener">
         <div class="footer">SAINZ INDONESIA</div>
     </div>
-    <script src="script/script.js"></script>
-    <script src="script/daftar.js"></script>
 </body>
 </html>
